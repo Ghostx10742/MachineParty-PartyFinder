@@ -61,28 +61,48 @@ Private lobbies still work exactly like the base game. Share your room ID code w
 
 ---
 
-## Requirements
-
-- **Machine Party Mod Loader** must be installed. You can get it here:
-  https://github.com/machine-party-modding/Machine-Party-Mod-Loader-Installer
-
-Everyone who wants to browse or host public lobbies needs both the Machine Party Mod Loader and Party Finder. A friend can still join your private lobby by room ID code the normal way.
-
----
-
 ## Installation
 
-1. Install the **Machine Party Mod Loader** using the link above. Point it at your Machine Party game folder. It creates a "Machine Party Modded" shortcut and leaves your normal game untouched.
-2. Put **Jaxon-PartyFinder.zip** into the game's **mods** folder:
+### Prefer to watch instead of read?
+
+Use this video if you would rather watch than read the steps below.
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=bKLGPkOzQ7Y&t=4s">
+    <img src="https://img.youtube.com/vi/bKLGPkOzQ7Y/maxresdefault.jpg" alt="Watch the Party Finder install video" width="640">
+  </a>
+</p>
+
+Party Finder runs through the **Machine Party Mod Loader**, so you install that once, then drop Party Finder into the mods folder. Everyone who wants to browse or host public lobbies needs both. A friend can still join your private lobby by room ID code without either.
+
+### Step 1: Install the Machine Party Mod Loader
+
+1. **Find your game folder.** In Steam, right click **Machine Party** in your library, choose **Manage**, then **Browse local files**. The folder that opens (the one containing the game `.exe`) is your game folder.
+2. **Download the installer.** Open the mod loader's releases page and grab **Machine_Party_Mod-Loader_Installer.exe** from the latest release:
+   https://github.com/machine-party-modding/Machine-Party-Mod-Loader-Installer/releases
+3. **Run the installer.** When it asks for your game folder, paste or select the folder from step 1 (the one with the game `.exe`), for example:
+   ```
+   C:\Program Files (x86)\Steam\steamapps\common\party project\Machine Party_Windows
+   ```
+4. **Finish.** It creates a **Machine Party Modded** shortcut in your Start menu (press the Windows key and search for it). This shortcut is the only way to launch modded. Launching any other way gives you a normal, unmodded game.
+5. **Verify it installed.** Your game folder should now contain a **mods** folder and a **Machine Party__modded.pck** file. If they are missing, you pointed the installer at the wrong folder. Run it again with the correct game folder.
+
+### Step 2: Install Party Finder
+
+1. Download **Jaxon-PartyFinder.zip** from the Party Finder releases page:
+   https://github.com/Ghostx10742/MachineParty-PartyFinder/releases
+2. Put the zip (do **not** unzip it) into the **mods** folder inside your game folder:
    ```
    <your Machine Party folder>\mods\Jaxon-PartyFinder.zip
    ```
-   The mods folder is created by the mod loader during step 1.
-3. Launch the game using the **Machine Party Modded** shortcut.
 
-Note for the first launch: the mod loader may show a message asking to restart. Do not use the in game restart button. Instead, fully quit the game and start it again from the "Machine Party Modded" shortcut. The in game restart button starts the normal, unmodded game.
+### Step 3: Launch and play
 
-To uninstall, delete Jaxon-PartyFinder.zip from the mods folder.
+1. Start the game from the **Machine Party Modded** shortcut, not the normal Play button.
+2. First launch only: if the loader asks to restart, do **not** use the in game restart button. Fully close the game and reopen it from the **Machine Party Modded** shortcut. The in game restart button starts the normal, unmodded game.
+3. On the main menu, press **JOIN** to open the server browser. To host a public game, start a lobby and press **MAKE LOBBY PUBLIC**.
+
+To uninstall Party Finder, delete Jaxon-PartyFinder.zip from the mods folder. To play vanilla again, just launch from the normal Steam Play button.
 
 ---
 
