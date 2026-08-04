@@ -87,6 +87,8 @@ Use this video if you would rather watch than read the steps below.
 
 <p align="center"><a href="https://www.youtube.com/watch?v=bKLGPkOzQ7Y&t=4s"><b>&#9654; Watch the install video on YouTube</b></a></p>
 
+<p align="center"><a href="https://www.youtube.com/watch?v=dJ32-YxXumU"><b>&#9654; Tutorial en Espa&ntilde;ol (Spanish install tutorial) by DigitalZone</b></a></p>
+
 Party Finder runs through the **Machine Party Mod Loader**, so you install that once, then drop Party Finder into the mods folder. Everyone who wants to browse or host public lobbies needs both. A friend can still join your private lobby by room ID code without either.
 
 ### Step 1: Install the Machine Party Mod Loader
@@ -172,6 +174,7 @@ build.py             packages the mod into dist/
 ## Credits
 
 - Created by **J_axon**.
+- Spanish tutorial video by **DigitalZone**.
 - Minor thanks to **Kokiix**, creator of the Machine Party Mod Loader fork of GodotModding's godot mod loader, which Party Finder is loaded through.
 
 ---
