@@ -1,0 +1,139 @@
+<h1 align="center">Party Finder</h1>
+
+<p align="center">
+  <img src="assets/party-finder-banner.png" alt="Party Finder - a server browser mod for Machine Party" width="100%">
+</p>
+
+**Party Finder is a server browser mod for Machine Party.**
+
+Party Finder is a server browser for **Machine Party**. It adds a global, non region locked list of public lobbies on top of the game's existing Steam networking, so you can find and join games with strangers instead of only playing with friends. It does not change how the base game's networking works. It only adds to it.
+
+Created by **J_axon**.
+
+---
+
+## What is included
+
+- A **server browser** that replaces the main menu JOIN button.
+- A **Make Lobby Public** toggle on the host's lobby screen (private by default).
+- A **lobby setup popup** for naming your lobby and choosing a max player count.
+- A **join by room ID code** field for private lobbies (the same 18 digit code the base game already uses).
+
+Everything is built with the game's own font and styled as a green terminal theme, so it fits the look of Machine Party.
+
+---
+
+## How it works
+
+Machine Party already runs on Steam lobbies, but every lobby the base game creates is friends only, so lobbies never show up in a public search. Party Finder changes that in a safe, additive way:
+
+- When you make your lobby public, Party Finder flips your existing Steam lobby to a public type and tags it with a small amount of lobby data (name, max players, game version, host name). Turning it private again restores the friends only default.
+- The browser asks Steam for a worldwide list of lobbies that carry Party Finder's public tag, then reads each one's data to show its name and player count.
+- Joining a lobby reuses the game's own client join flow, exactly the same path the game uses when you accept a Steam invite. Nothing about the underlying connection changes.
+
+Party Finder is a pure GDScript mod loaded through the Machine Party Mod Loader. It does not repack or modify the game's data file.
+
+---
+
+## Everything you can do
+
+**From the main menu**
+
+- Press **JOIN** to open the server browser.
+- See a live list of public lobbies from around the world, each showing the lobby name and current players out of the max.
+- Press **REFRESH** (top right) to re fetch the list at any time.
+- Press a lobby's **JOIN** button to join it. Full or version mismatched lobbies are shown but cannot be joined.
+- Paste an 18 digit room ID code into the **ROOM ID** field and press **JOIN** to join a private lobby directly. The **PASTE** button fills the field from your clipboard.
+- Press the **X** (top left) or **BACK** to close the browser.
+
+**When hosting**
+
+- Host a game as normal. On the lobby screen you will see a **MAKE LOBBY PUBLIC** button next to the existing lobby buttons. It uses the game's native button style.
+- Press it to open the setup popup, where you can:
+  - Type a **lobby name**.
+  - Set the **max players** using the up and down arrows. The limit is **4** and the mod will not let you go higher.
+- Confirm to publish. Your lobby now appears in everyone's browser.
+- Press the button again to switch your lobby back to **private** at any time. It works as a simple on and off switch.
+
+Private lobbies still work exactly like the base game. Share your room ID code with a friend and they can paste it into the browser to join.
+
+---
+
+## Requirements
+
+- **Machine Party Mod Loader** must be installed. You can get it here:
+  https://github.com/machine-party-modding/Machine-Party-Mod-Loader-Installer
+
+Everyone who wants to browse or host public lobbies needs both the Machine Party Mod Loader and Party Finder. A friend can still join your private lobby by room ID code the normal way.
+
+---
+
+## Installation
+
+1. Install the **Machine Party Mod Loader** using the link above. Point it at your Machine Party game folder. It creates a "Machine Party Modded" shortcut and leaves your normal game untouched.
+2. Put **Jaxon-PartyFinder.zip** into the game's **mods** folder:
+   ```
+   <your Machine Party folder>\mods\Jaxon-PartyFinder.zip
+   ```
+   The mods folder is created by the mod loader during step 1.
+3. Launch the game using the **Machine Party Modded** shortcut.
+
+Note for the first launch: the mod loader may show a message asking to restart. Do not use the in game restart button. Instead, fully quit the game and start it again from the "Machine Party Modded" shortcut. The in game restart button starts the normal, unmodded game.
+
+To uninstall, delete Jaxon-PartyFinder.zip from the mods folder.
+
+---
+
+## Notes
+
+- The Steam overlay (Shift and Tab) does not work while the game runs through the mod loader. This is a mod loader limitation, not a Party Finder issue. The browser and room ID copy and paste cover joining without it.
+
+---
+
+## Building from source
+
+Party Finder is pure GDScript, so there is no compile step. Building just means packaging the mod folder into a zip that the Machine Party Mod Loader can read.
+
+Requirements: git, and Python 3 (used only to package the zip).
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/MachineParty-PartyFinder.git
+   cd MachineParty-PartyFinder
+   ```
+2. Build the zip:
+   ```bash
+   python build.py
+   ```
+   This writes `dist/Jaxon-PartyFinder.zip`, laid out as `mods-unpacked/Jaxon-PartyFinder/...`, which is the structure the mod loader expects. A prebuilt copy is already in `dist/` if you just want to install it.
+3. Install it for testing: copy `dist/Jaxon-PartyFinder.zip` into your game's `mods` folder, then launch from the "Machine Party Modded" shortcut (see the Installation section above).
+
+Dev loop: edit the GDScript in `Jaxon-PartyFinder/`, run `python build.py`, copy the new zip into the game `mods` folder, and relaunch from the modded shortcut. If a change to which methods are hooked triggers a first launch restart prompt, quit fully and relaunch from the shortcut.
+
+Repo layout:
+
+```
+Jaxon-PartyFinder/   the mod source (manifest.json, mod_main.gd, server_browser.gd, ui/)
+dist/                the built, ready to install zip
+assets/              readme banner image
+build.py             packages the mod into dist/
+```
+
+---
+
+## Credits
+
+- Created by **J_axon**.
+- Minor thanks to **Kokiix**, creator of the Machine Party Mod Loader fork of GodotModding's godot mod loader, which Party Finder is loaded through.
+
+---
+
+## License
+
+Party Finder is released under the **MIT License**. You are free to use, modify, and include this code in any project, including your own mods, for free. The one requirement is that you keep the credit to **J_axon** (the copyright and permission notice from the LICENSE file) included with the code. Please also credit J_axon somewhere visible in any project that reuses it. See the LICENSE file for the full terms.
+
+---
+
+## AI disclosure
+
+AI was used during the development of this project, mainly for revisions, inquiries, and things I just did not know. This does not mean the mod was fully AI-made, but rather that AI was used as part of the development process. I wanted to disclose this for people who may have a problem with AI being involved and may not want anything to do with it. Even though I disagree with your view on AI, I still respect your opinion on the subject.

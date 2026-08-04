@@ -1,0 +1,21 @@
+{
+	"name": "PartyFinder",
+	"namespace": "Jaxon",
+	"version_number": "1.0.0",
+	"description": "Party Finder: a global public server browser for Machine Party, built on Steam networking.",
+	"website_url": "",
+	"dependencies": [],
+	"extra": {
+		"godot": {
+			"authors": ["J_axon"],
+			"tags": ["multiplayer", "networking", "ui"],
+			"description_rich": "Party Finder adds a full server browser to Machine Party, built entirely on Steam networking.\n\n- Replaces the main menu JOIN button with a global (not region locked) lobby browser.\n- Adds a 'Make Lobby Public' toggle to the host's lobby screen, with a lobby name and a max players stepper (1 to 4).\n- Public lobbies are listed worldwide. Private lobbies are still joined by their room ID code.\n\nIt does not change how the base game's networking works.",
+			"optional_dependencies": [],
+			"load_before": [],
+			"incompatibilities": [],
+			"compatible_mod_loader_version": ["7.0.0"],
+			"compatible_game_version": ["0.0.0"],
+			"config_schema": {}
+		}
+	}
+}

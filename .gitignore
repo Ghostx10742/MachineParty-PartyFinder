@@ -1,0 +1,9 @@
+# Godot editor / import artifacts (not part of the mod source)
+.godot/
+*.import
+export_presets.cfg
+
+# OS junk
+Thumbs.db
+.DS_Store
+desktop.ini
