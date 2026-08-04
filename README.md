@@ -10,6 +10,8 @@ Party Finder is a server browser for **Machine Party**. It adds a global, non re
 
 Created by **J_axon**.
 
+> **Credit required.** You are free to use Party Finder's code in your own projects under the MIT License. If you reuse any of it, you must credit **J_axon** and keep the license notice included. Please keep that credit visible and easy to find, for example in your README, mod description, or in game credits.
+
 ---
 
 ## What is included
