@@ -69,9 +69,11 @@ Use this video if you would rather watch than read the steps below.
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=bKLGPkOzQ7Y&t=4s">
-    <img src="https://img.youtube.com/vi/bKLGPkOzQ7Y/maxresdefault.jpg" alt="Watch the Party Finder install video" width="640">
+    <img src="assets/install-video.png" alt="Watch the Party Finder install video on YouTube" width="640">
   </a>
 </p>
+
+<p align="center"><a href="https://www.youtube.com/watch?v=bKLGPkOzQ7Y&t=4s"><b>&#9654; Watch the install video on YouTube</b></a></p>
 
 Party Finder runs through the **Machine Party Mod Loader**, so you install that once, then drop Party Finder into the mods folder. Everyone who wants to browse or host public lobbies needs both. A friend can still join your private lobby by room ID code without either.
 
@@ -99,16 +101,20 @@ Party Finder runs through the **Machine Party Mod Loader**, so you install that 
 ### Step 3: Launch and play
 
 1. Start the game from the **Machine Party Modded** shortcut, not the normal Play button.
-2. First launch only: if the loader asks to restart, do **not** use the in game restart button. Fully close the game and reopen it from the **Machine Party Modded** shortcut. The in game restart button starts the normal, unmodded game.
+2. First launch only: if the loader asks to restart, do **not** use the in game restart button. Fully close the game and reopen it from the **Machine Party Modded** shortcut. The in game restart button, for some reason, does not properly load in the mods you have if they are freshly installed.
 3. On the main menu, press **JOIN** to open the server browser. To host a public game, start a lobby and press **MAKE LOBBY PUBLIC**.
 
 To uninstall Party Finder, delete Jaxon-PartyFinder.zip from the mods folder. To play vanilla again, just launch from the normal Steam Play button.
+
+### Still not working?
+
+If you installed everything correctly and Party Finder still does not show up, close the game completely and launch it again from the **Machine Party Modded** shortcut. Freshly installed mods sometimes need one extra restart. If it still does not appear, super double check every step above, especially that **Jaxon-PartyFinder.zip** is inside the **mods** folder and that you launched from the **Machine Party Modded** shortcut and not the normal Steam Play button.
 
 ---
 
 ## Notes
 
-- The Steam overlay (Shift and Tab) does not work while the game runs through the mod loader. This is a mod loader limitation, not a Party Finder issue. The browser and room ID copy and paste cover joining without it.
+- The Steam overlay (Shift and Tab), and the invite button, do not work while the game runs through the mod loader. This is a mod loader limitation, not a Party Finder issue. The browser and room ID copy and paste cover joining without it.
 
 ---
 
