@@ -37,6 +37,18 @@ Party Finder is a pure GDScript mod loaded through the Machine Party Mod Loader.
 
 ---
 
+## Works with vanilla players
+
+Party Finder is fully cross compatible with players who do **not** have the mod. You do not both need it installed to play together.
+
+- If you host with the mod active, you can still give your room ID code to a vanilla player and they can join and play with you completely normally.
+- It works the same the other way around: with the mod, you can paste a vanilla host's room ID code and join their game just fine.
+- Public lobbies only appear in the browser for people who also have the mod, but anyone can still join by room ID code.
+
+The only difference for mod players is that the in game invite button does not work (a Steam overlay limitation of the mod loader), so mod players just share the room ID code instead.
+
+---
+
 ## Everything you can do
 
 **From the main menu**
