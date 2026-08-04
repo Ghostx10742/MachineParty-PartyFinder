@@ -130,6 +130,14 @@ If you installed everything correctly and Party Finder still does not show up, c
 
 ---
 
+## Game updates
+
+Party Finder runs on top of the Machine Party Mod Loader, so a future Machine Party update can temporarily break the mod loader (and with it, this mod). If that happens, the modded shortcut may fail to launch or your mods may stop loading.
+
+If it does, do not panic and do not keep reinstalling. Just wait until the mod loader pushes an update that fixes it, then update the mod loader and launch again. Your normal, unmodded game is never affected and always launches fine from the standard Steam Play button.
+
+---
+
 ## Building from source
 
 Party Finder is pure GDScript, so there is no compile step. Building just means packaging the mod folder into a zip that the Machine Party Mod Loader can read.
